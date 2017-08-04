@@ -30,6 +30,7 @@ gulp.task('less', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
+    
     return gulp.src('css/agency.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
@@ -37,6 +38,7 @@ gulp.task('minify-css', ['less'], function() {
         .pipe(browserSync.reload({
             stream: true
         }))
+        
 });
 
 // Minify JS
