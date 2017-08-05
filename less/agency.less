@@ -78,12 +78,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 40px;
 }
 
-// Custom Navigation Bar
 .navbar-logo {
-    height: 60px;
-    padding: 10px;    
-}
+    margin-right: 10px;
 
+}
 .navbar-custom {
     background-color: @gray-darker;
     border-color: transparent;
@@ -155,11 +153,15 @@ h1, h2, h3, h4, h5, h6 {
             -moz-transition: all 0.3s;
             transition: all 0.3s;
         }
-        .navbar-left.navbar-logo {
-            height: 2px;
+        .navbar-left{
+        .navbar-logo {
+            height: 2em;
+            margin-top: 15px;
+            margin-right: 10px;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
+        }
         }
         .navbar-nav>.active>a {
             border-radius: 3px;
@@ -172,15 +174,17 @@ h1, h2, h3, h4, h5, h6 {
 @media(min-width:768px) {
     .navbar-custom.affix {
         background-color: @gray-darker;
-        padding: 10px 0;
+        padding: 10px;
         .navbar-brand {
             font-size: 1.5em;
         }
-        .navbar-left.navbar-logo {
-            height: 2px;    
+        .navbar-left{
+        .navbar-logo {
+            height: 1.5em;
+            margin-top: 20px;
+        }
         }
     }
-
 }
 
 
