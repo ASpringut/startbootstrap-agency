@@ -78,14 +78,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 40px;
 }
 
-.navbar-logo {
-    margin-right: 10px;
 
-}
 .navbar-custom {
     background-color: @gray-darker;
     border-color: transparent;
+
     .navbar-brand {
+        font-size: 2em;
         padding-top: 20px;
         padding-bottom: 20px;
         color: @theme-primary;
@@ -96,8 +95,21 @@ h1, h2, h3, h4, h5, h6 {
         &.active {
             color: darken(@theme-primary, 10%);
         }
-    }
 
+        .navbar-logo {
+            margin-right: 5px;
+            height: 1em;
+            width: 1em;
+            float: left;
+            vertical-align: middle;
+
+        } 
+        .navbar-brand-text {
+            font-size: 1em;
+            vertical-align: middle;
+
+        }  
+    }
     .navbar-collapse {
         border-color: fade(white, 2%);
     }
@@ -152,16 +164,7 @@ h1, h2, h3, h4, h5, h6 {
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
-        }
-        .navbar-left{
-        .navbar-logo {
-            height: 2em;
-            margin-top: 15px;
-            margin-right: 10px;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
-        }
+
         }
         .navbar-nav>.active>a {
             border-radius: 3px;
@@ -178,18 +181,12 @@ h1, h2, h3, h4, h5, h6 {
         .navbar-brand {
             font-size: 1.5em;
         }
-        .navbar-left{
-        .navbar-logo {
-            height: 1.5em;
-            margin-top: 20px;
-        }
-        }
     }
 }
 
 
 header {
-    background-image: url('../img/BB-bg-post.jpeg');
+    background-image: url('../img/BB-bg-post-lq.jpeg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
