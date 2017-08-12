@@ -108,7 +108,11 @@ fieldset[disabled] .btn-primary.active {
   font-weight: 700;
   border-radius: 3px;
   font-size: 18px;
-  padding: 20px 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 175px;
+  text-align: center;
+  margin: 5px;
 }
 .btn-xl:hover,
 .btn-xl:focus,
@@ -171,7 +175,7 @@ fieldset[disabled] .btn-xl.active {
   vertical-align: middle;
 }
 .navbar-custom .navbar-brand .navbar-brand-text {
-  font-size: 1em;
+  font-size: 0.6em;
   vertical-align: middle;
 }
 .navbar-custom .navbar-collapse {
@@ -309,7 +313,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 75px 0;
   }
 }
 .service-heading {
